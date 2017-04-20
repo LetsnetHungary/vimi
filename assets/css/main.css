@@ -1,0 +1,113 @@
+@import url(custom/_navbar.css);
+
+body {
+    font-family: "Roboto", Verdana, Arial, Helvetica, sans-serif;
+    color: #222;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #e75524;
+}
+
+h2, h3 {
+    margin-bottom: 24px;
+    margin-top: 0px;
+}
+
+a {
+    color: #e75524;
+    text-decoration: none;
+}
+
+a:hover, a:active, a:visited {
+    color: #bb451d;
+    text-decoration: none;
+}
+
+p,
+ul li {
+    font-size: 12pt;
+    margin-top: 0;
+}
+
+p {
+    margin-bottom: 16px;
+    line-height: 1.5;
+}
+
+ul li {
+    line-height: 2;
+}
+
+input,
+select,
+label {
+    margin: 8px 0;
+}
+
+a.button {
+    background-color: #ff632f;
+    color: #fff;
+    padding: 5px 15px;
+}
+
+a.button:hover {
+    background-color: #bb451d;
+}
+
+hr {
+    border-bottom: 1px solid #cccccc;
+    margin: 20px 0 40px;
+}
+
+#content .container {
+    padding-top: 85px;
+    background-color: #fff;
+    min-height: 100vh;
+}
+
+.auto-img img {
+    border: 1px solid #e75524;
+    border-radius: 10px;
+    align-items: center;
+}
+
+@media (min-width: 992px) {
+    #content .container {
+        padding-top: 200px;
+        padding-left: 175px;
+        padding-right: 175px;
+    }
+}
+
+.text_supp {
+    margin-top: 32px;
+}
+
+.address_center {
+    width: 160px;
+    margin: 0px auto;
+}
+
+#fizetendo {
+    font-size: 18pt;
+}
+
+.autokepek {
+  display: flex;
+  max-height: 400px;
+  flex-basis: 400px;
+  align-items: center;
+}
+
+.ak {
+  min-height: 100%;
+}
+
+.kepecske {
+  border-radius: 5px;
+  border: 1px solid #eb7047;
+  margin: 50px auto;
+  max-width: 50%;
+
+}

@@ -1,0 +1,14 @@
+html {
+  font-family: 'Roboto', sans-serif;
+}
+.middle {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.middle img {
+  max-width: 400px;
+}

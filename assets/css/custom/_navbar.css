@@ -1,0 +1,189 @@
+.navbar-fixed-top.navbar-absolute {
+    position: fixed;
+    margin: 0;
+}
+
+.navbar-absolute + div {
+    margin-top: 68px;
+}
+
+.brand-logo {
+    background: url('../../../img/brand-logo.gif') no-repeat center;
+    background-size: cover;
+    width: 225px;
+    height: 195px;
+    float: left;
+    display: flex;
+}
+
+.navbar {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    background-color: #fff;
+    height: 100px;
+}
+
+.navbar-toggle,
+.navbar-toggle.collapsed {
+    font-size: 25px;
+    margin-top: 12px;
+    background-color: #ddd;
+}
+
+/* Own code */
+.navbar-header {
+    float: none;
+}
+
+div.navbar-collapse {
+    text-align: center;
+}
+
+ul.navbar-nav {
+    display: inline-block;
+    float: none;
+    margin-bottom: -5px;
+}
+
+.nav > li:not(#brand-logo) > a {
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    font-size: 12pt;
+}
+@media (min-width: 992px) {
+    .nav > li:not(#brand-logo) > a {
+        height: 100px;
+    }
+
+    .navbar-nav > li:not(#brand-logo) {
+        width: 119px;
+        padding: 0;
+    }
+    .navbar-nav > li:not(#brand-logo) > a {
+        padding: 0;
+        padding-top: 32px;
+        margin: 0;
+        font-size: 12px;
+    }
+    .navbar-nav > #brand-logo > a {
+        padding: 0;
+        margin: 0;
+    }
+}
+@media (min-width: 1200px) {
+    .nav > li:not(#brand-logo) > a {
+        height: 100px;
+    }
+
+    .navbar-nav > li:not(#brand-logo) {
+        width: 140px;
+    }
+    .navbar-nav > li:not(#brand-logo) > a {
+        font-size: 15px;
+    }
+}
+
+.nav.navbar-nav > li:not(#brand-logo) > a:hover,
+.nav.navbar-nav > li:not(#brand-logo) > a:focus {
+    background-color: #b83d14;
+}
+
+.nav.navbar-nav > li#brand-logo > a:hover,
+.nav.navbar-nav > li#brand-logo > a:focus {
+    background-color: transparent;
+}
+
+nav.navbar {
+    background: -webkit-linear-gradient(red, yellow); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(red, yellow); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(red, yellow); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#eb7047, #cf4517); /* Standard syntax */
+    box-shadow: 0 5px 5px #b3b3b3;
+}
+
+body {
+    background-color: #f2f2f2;
+}
+
+.navbar-header .mini-container {
+    display: none;
+}
+
+.logoimg {
+  max-height: 200px!important;
+}
+
+/*** MEDIA ***/
+
+@media (max-width: 991px) {
+
+    .container {
+        width: 98%;
+    }
+
+    ul.navbar-nav li#brand-logo {
+        display: none;
+    }
+
+    .nav > li:not(#brand-logo) > a {
+        padding: 20px 20px 20px 20px;
+        font-size: 10pt;
+    }
+
+    .navbar {
+        height: 60px;
+    }
+}
+
+@media (max-width: 767px) {
+    div.navbar-collapse {
+        text-align: left;
+        background: #cf4517;
+    }
+
+    .container-fluid > .navbar-collapse, .container-fluid > .navbar-header, .container > .navbar-collapse, .container > .navbar-header {
+        margin-right: -25px;
+        margin-left: -25px;
+    }
+
+    ul.navbar-nav {
+        display: block;
+        float: none;
+        margin-bottom: 0;
+    }
+
+    .nav > li:not(#brand-logo) > a {
+        padding: 15px 18px 15px 18px;
+        font-size: 10pt;
+    }
+
+    nav.navbar {
+        box-shadow: none;
+    }
+
+    .navbar-header button {
+        margin-bottom: -2px;
+    }
+
+    .navbar-header .mini-container {
+        width: 56px;
+        height: 49px;
+        display: inline-block;
+        float: none;
+        position: absolute;
+        right: 0;
+        left: 0;
+        margin: 5px auto auto;
+        top: 5px;
+        background-image: url('../../img/mini-logo.gif');
+    }
+
+    .navbar-header .mini-container {
+        display: block;
+    }
+
+    .navbar-header {
+        height: 60px;
+    }
+}
